@@ -3,13 +3,15 @@ import GoldList from "./GoldList";
 import NavTabs from "./NavTabs";
 import CapacityIndicator from "./CapacityIndicator";
 
-const Dashboard = () => {
+const Dashboard = ({ activeTab, setActiveTab }) => {
   return (
     <>
-      <div className="p-2 w-full flex flex-col space-y-3">
-        <NavTabs />
+      <div className="p-2 w-full flex flex-col space-y-2">
+        <NavTabs activeTab={activeTab} setActiveTab={setActiveTab} />
         <GoldList />
-        <CapacityIndicator />
+        <div className="my-2">
+          <CapacityIndicator />
+        </div>
       </div>
     </>
   );

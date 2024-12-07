@@ -2,15 +2,18 @@ import "./App.css";
 import "./index.css";
 import DashboardHeader from "./Components/DashboardHeader";
 import Dashboard from "./Components/Dashboard";
+import { useState } from "react";
 
 function App() {
+  const [activeTab, setActiveTab] = useState("Home");
+
   return (
     <div
-      className="flex flex-col items-center space-y-3 p-4 w-[400px] h-[600px] rounded-xl"
+      className="bg-gray-100/70 flex flex-col items-center p-3 w-[420px] h-fit rounded-xl"
       style={{ fontFamily: "Parkinsans" }}
     >
       <DashboardHeader />
-      <Dashboard />
+      <Dashboard activeTab={activeTab} setActiveTab={setActiveTab} />
     </div>
   );
 }

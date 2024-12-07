@@ -2,9 +2,11 @@ import React from "react";
 
 const CapacityIndicator = () => {
   return (
-    <div className="w-full flex items-center justify-between space-x-2">
-      <p className="text-[0.65rem]">6 / 50</p>
-      <div className="flex-1 h-6 rounded-full border border-slate-200 bg-gradient-to-r from-green-300 from-0% to-8%"></div>
+    <div className="w-[90%] mx-auto flex flex-col items-end h-fit space-y-1">
+      <div className="w-full h-3 text-[0.65rem] text-gray-200 rounded-full border border-gray-200 bg-gradient-to-r from-gray-500 from-0% to-20% ..."></div>
+      <p className="text-[0.65rem] text-end text-gray-400">
+        4 slots of 50 slots Used
+      </p>
     </div>
   );
 };

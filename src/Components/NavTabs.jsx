@@ -3,6 +3,7 @@ import React from "react";
 const tabs = [
   { name: "Home", href: "#", current: true },
   { name: "Filters", href: "#", current: false },
+  { name: "History", href: "#", current: false },
   { name: "Settings", href: "#", current: false },
 ];
 
@@ -10,11 +11,11 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-const NavTabs = () => {
+const NavTabs = ({ activeTab, setActiveTab }) => {
   return (
     <nav
       aria-label="Tabs"
-      className="bg-slate-100/80 flex justify-between items-center p-2 rounded-lg"
+      className="flex justify-between items-center border-b border-gray-200"
     >
       {tabs.map((tab) => (
         <a
@@ -22,11 +23,12 @@ const NavTabs = () => {
           href={tab.href}
           aria-current={tab.current ? "page" : undefined}
           className={classNames(
-            tab.current
-              ? "bg-white text-gray-900 font-semibold"
-              : "text-gray-600 hover:text-gray-800",
-            "rounded-lg px-6 py-2 text-sm font-medium"
+            tab.name === activeTab
+              ? "border-gray-900 text-gray-900 font-bold"
+              : "border-transparent text-gray-400 hover:border-gray-400",
+            "w-1/4 border-b-2 px-1 py-4 text-center text-sm font-medium"
           )}
+          onClick={() => setActiveTab(tab.name)}
         >
           {tab.name}
         </a>
