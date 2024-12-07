@@ -1,7 +1,6 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
@@ -39,4 +38,42 @@
 
 .read-the-docs {
   color: #888;
+}
+
+@font-face {
+  font-family: 'Parkinsans';
+  font-weight: 900;
+  src: local('Parkinsans'), url(./fonts/Parkinsans/Parkinsans-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Parkinsans';
+  font-weight: 600;
+  src: local('Parkinsans'), url(./fonts/Parkinsans/Parkinsans-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Parkinsans';
+    src: local('Parkinsans'), url(./fonts/Parkinsans/Parkinsans-Regular.ttf) format('truetype');
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(241 245 249 / 0.8);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(186, 190, 194);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
