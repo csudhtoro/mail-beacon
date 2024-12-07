@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "Mail Beacon",
+    "version": "1.0.0",
+    "description": "Mail Beacon is a targeted email tracking tool.",
+    "action": {
+        "default_popup": "index.html"
+    },
+    "permissions": []
+}
