@@ -41,25 +41,45 @@
 }
 
 @font-face {
-  font-family: 'Parkinsans';
+  font-family: 'Inter';
   font-weight: 900;
-  src: local('Parkinsans'), url(./fonts/Parkinsans/Parkinsans-Bold.ttf) format('truetype');
+  src: local('Inter'), url(./fonts/Inter/Inter-Bold.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: 'Parkinsans';
+  font-family: 'Inter';
   font-weight: 600;
-  src: local('Parkinsans'), url(./fonts/Parkinsans/Parkinsans-SemiBold.ttf) format('truetype');
+  src: local('Inter'), url(./fonts/Inter/Inter-SemiBold.ttf) format('truetype');
 }
 
 @font-face {
-    font-family: 'Parkinsans';
-    src: local('Parkinsans'), url(./fonts/Parkinsans/Parkinsans-Regular.ttf) format('truetype');
+  font-family: 'Inter';
+  font-weight: 600;
+  font-style: italic;
+  src: local('Inter'), url(./fonts/Inter/Inter-SemiBoldItalic.ttf) format('truetype');
 }
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 500;
+  src: local('Inter'), url(./fonts/Inter/Inter-Medium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter'), url(./fonts/Inter/Inter-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'ChelaOne';
+  src: local('ChelaOne'), url(./fonts/ChelaOne/ChelaOne-Regular.ttf) format('truetype');
+}
+
+
 
 /* width */
 ::-webkit-scrollbar {
-  width: 4px;
+  width: 0px;
 }
 
 /* Track */
@@ -70,7 +90,7 @@
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: rgb(186, 190, 194);
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 /* Handle on hover */

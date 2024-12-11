@@ -9,11 +9,13 @@ function App() {
 
   return (
     <div
-      className="bg-gray-100/70 flex flex-col items-center p-3 w-[420px] h-fit rounded-xl"
-      style={{ fontFamily: "Parkinsans" }}
+      className="bg-gradient-to-bl from-indigo-100/80 to-white w-[400px]"
+      style={{ fontFamily: "Inter" }}
     >
-      <DashboardHeader />
-      <Dashboard activeTab={activeTab} setActiveTab={setActiveTab} />
+      <div className="flex flex-col items-center">
+        <DashboardHeader />
+        <Dashboard activeTab={activeTab} setActiveTab={setActiveTab} />
+      </div>
     </div>
   );
 }

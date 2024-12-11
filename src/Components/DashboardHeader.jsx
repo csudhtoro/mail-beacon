@@ -10,17 +10,18 @@ const DashboardHeader = () => {
   };
 
   return (
-    <div
-      className="w-full flex items-center justify-between px-3"
-      style={{ fontFamily: "Parkinsans" }}
-    >
+    <div className="bg-white w-full flex items-center justify-between px-6 py-4 border border-b-slate-300">
       <div className="flex justify-center items-center space-x-3">
-        <LuMail size={20} />
         <div className="flex justify-center items-center space-x-2">
-          <h2 className="text-xl font-semibold">Mail Beacon</h2>
+          <h2
+            className="text-2xl text-indigo-500/90"
+            style={{ fontFamily: "ChelaOne" }}
+          >
+            Mail Beacon
+          </h2>
           <LuRefreshCw
             size={14}
-            className={`text-gray-400 cursor-pointer ${
+            className={`text-slate-600 cursor-pointer ${
               isRefreshing && "animate-spin"
             }`}
             onClick={() => refresh()}
